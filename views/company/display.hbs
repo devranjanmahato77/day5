@@ -1,0 +1,23 @@
+<h2>{{viewTitle}}</h2>
+<form action="/company" method="POST">
+    <div>
+        <lable>Company Name</lable>
+        <input type="text" name="cname" placeholder="ABC company" id="cname"><br><br>
+    </div>
+
+    <div>
+        <label>About</label><br>
+        <textarea type="textarea" name="about" placeholder="Write something about company" id="about" rows="4"
+            cols="50"></textarea>
+    </div>
+
+    <div>
+        <label>Date of establish</label>
+        <input type="date" name="doe">
+    </div>
+    <br>
+
+    <div>
+        <input type="submit" name="submit" value="Submit">
+    </div>
+</form>

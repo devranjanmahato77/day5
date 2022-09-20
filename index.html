@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <h2><u>Company Info</u></h2>
+                <form onsubmit="event.preventDefault();submitForm()" autocomplete="off">
+
+                    <div>
+                        <lable>Company Name</lable>
+                        <input type="text" name="cname" placeholder="ABC company" id="cname"><br><br>
+                    </div>
+
+                    <div>
+                        <label>About</label><br>
+                        <textarea type="textarea" name="about" placeholder="Write something about company" id="about" rows="4" cols="50"></textarea>
+                    </div>
+
+                    <div>
+                        <label>Date of establish</label>
+                        <input type="date" name="doe">
+                        </div>
+                        <br>
+
+                    <div>
+                        <input type="submit" name="submit" value="Submit">
+                    </div>
+
+                </form>
+            </td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td>
+                <h2><u>Company detail list</u></h2>
+                <table class="list" id="complist" border="1">
+                    <thead>
+                        <tr>
+                            <th>Sno.</th>
+                            <th>Company name</th>
+                            <th>About</th>
+                            <th>Date of establish</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
